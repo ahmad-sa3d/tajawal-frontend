@@ -1,0 +1,117 @@
+
+/** ---------------- ANIMATIONS ---------------- **/
+
+/*zoomIN*/
+.zoomIn-enter {
+}
+
+.zoomIn-enter-active {
+  animation: zoomIn 0.3s ease-in-out forwards;
+}
+
+.zoomIn-leave {
+}
+
+.zoomIn-leave-active {
+  animation: zoomInReverse 0.3s ease-in-out forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: translateX(0px) scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomInReverse {
+  from {
+    transform: translateX(0px) scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(0px) scale(0.9);
+    opacity: 0;
+  }
+}
+
+/*slideLeft*/
+.slideLeft-enter {
+}
+
+.slideLeft-enter-active {
+  animation: slideLeft 0.3s ease-in-out forwards;
+}
+
+.slideLeft-leave {
+}
+
+.slideLeft-leave-active {
+  animation: slideLeftReverse 0.3s ease-in-out forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeftReverse {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+
+.slideRight-enter {
+}
+
+.slideRight-enter-active {
+  animation: slideRight 0.3s ease-in-out forwards;
+}
+
+.slideRight-leave {
+}
+
+.slideRight-leave-active {
+  animation: slideRightReverse 0.3s ease-in-out forwards;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRightReverse {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+}
+
+/*---------------------*/
