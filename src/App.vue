@@ -54,7 +54,7 @@
         >
             <img src="/static/tajawal.svg" alt="">
         </v-avatar>
-          {{ title }}
+          {{ title }} - {{ config.version }}
       </v-toolbar-title>
       <v-avatar>
         <v-progress-circular
@@ -99,9 +99,11 @@
 </template>
 
 <script>
+  import { config } from './config'
   export default {
     data () {
       return {
+        config: config,
         drawer: false,
         items: [
           {

@@ -1,3 +1,7 @@
+/**
+ * Application Routes
+ */
+
 import Vue from 'vue'
 import Router from 'vue-router'
 let Home = () => import('@/components/Home')

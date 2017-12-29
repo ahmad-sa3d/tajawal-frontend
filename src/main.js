@@ -7,10 +7,6 @@ import Notifications from 'vue-notification'
 import velocity      from 'velocity-animate'
 Vue.use(Notifications, { velocity })
 
-import axios from 'axios'
-axios.defaults.baseURL = 'https://api.tajawal.dev/v1'
-window.Vue = Vue
-
 import {
   Vuetify,
   VApp,
@@ -76,6 +72,7 @@ Vue.use(Vuetify, {
 import App from './App'
 import router from './router'
 import { store } from './store'
+import './axios'
 
 Vue.config.productionTip = false
 
